@@ -13,6 +13,7 @@ virtualenv:
   
 before_install:
  - sudo apt-get install unixodbc unixodbc-dev freetds-common freetds-bin freetds-dev tdsodbc python-dev
+ - pip install pyodbc
 
 install:
   - git clone https://github.com/OCA/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
